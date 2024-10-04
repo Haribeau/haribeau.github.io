@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+<header>
+    <img class="flag" src="images/tennessee-flag.webp" alt="Tennessee State Flag" style="width:200px;height:200px;">
+    <h1>Welcome to Tennessee!</h1>
+</header>
+
+<nav>
+    <ul class="horizontal-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nashville.html">Nashville</a></li>
+        <li><a href="memphis.html">Memphis</a></li>
+        <li><a href="chattanooga.html">Chattanooga</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<h2>Contact Us</h2>
+<form action="#" method="post" onsubmit="return validateForm();">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="confirm-email">Confirm Email Address:</label>
+    <input type="email" id="confirm-email" name="confirm-email" required>
+
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    function validateForm() {
+        const email = document.getElementById('email').value;
+        const confirmEmail = document.getElementById('confirm-email').value;
+
+        if (email !== confirmEmail) {
+            alert("Email addresses do not match. Please try again.");
+
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</body>
+</html>
