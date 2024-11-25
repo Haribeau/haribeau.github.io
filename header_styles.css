@@ -1,0 +1,90 @@
+#globe {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 30px;
+    height: auto;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+#search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.landscape-container {
+    position: absolute;
+    top: -350px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#landscape {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    object-fit: cover;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+header h1 {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%) rotate(-10deg);
+    font-size: 2rem;
+    margin: 0;
+    z-index: 1000;
+    font-family: 'Lucida Handwriting', cursive;
+    color: #Ffa500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+.nav-btn.active {
+    background-color: #Ffa500;
+}
